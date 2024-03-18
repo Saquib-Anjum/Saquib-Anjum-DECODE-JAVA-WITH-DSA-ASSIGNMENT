@@ -1,4 +1,4 @@
-package Assignment_Of_LOOP;
+package src.Assignment_Of_LOOP;
 
 import java.util.Scanner;
 
@@ -14,18 +14,20 @@ public class Q5 {
         System.out.print("Enter the number of terms in the Fibonacci series: ");
         int n = scanner.nextInt();
 
-        int firstTerm = 0, secondTerm = 1, sum = 0;
+        int a = 0;
+        int b = 1;
+        int sum = 0;
 
         for (int i = 0; i < n; i++) {
-            System.out.print(firstTerm + " ");
+            System.out.print(a  + " ");
 
             // Add the current term to the sum
-            sum =sum+firstTerm;
+            sum =sum+a;
 
             // Update the terms for the next iteration
-            int nextTerm = firstTerm + secondTerm;
-            firstTerm = secondTerm;
-            secondTerm = nextTerm;
+            int c =a+ b;
+            a = b;
+            b =c;
                 }
 
             System.out.println("\nSum of the Fibonacci series: " + sum);
